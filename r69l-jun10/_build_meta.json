@@ -1,0 +1,8 @@
+{
+  "n_total": 74,
+  "n_with_video": 0,
+  "n_with_rrd": 0,
+  "iter_loaded": 0,
+  "inference_steps": 50,
+  "seed": 42
+}

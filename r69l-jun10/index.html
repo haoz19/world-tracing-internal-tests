@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>r69l_v2_evermotion_ithappy_840_opp · Jun-10 full test</title>
+<style>
+  :root {
+    --bg: #f7f7f8;
+    --card: #fff;
+    --border: #d8dadc;
+    --text: #1f2328;
+    --muted: #57606a;
+    --accent: #0969da;
+    --pill: #e6effa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 16px 24px 96px;
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px; line-height: 1.45;
+  }
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 16px; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 16px;
+    box-shadow: 0 1px 0 rgba(27,31,36,0.04);
+  }
+  header h1 { margin: 0; font-size: 18px; font-weight: 600; }
+  header .meta { color: var(--muted); font-size: 12px; }
+
+  .toolbar {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 14px; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  }
+  .toolbar label { font-size: 13px; color: var(--muted); }
+  .toolbar input[type="text"], .toolbar select {
+    padding: 4px 8px; border: 1px solid var(--border); border-radius: 6px;
+    font-size: 13px;
+  }
+  .toolbar input[type="text"] { min-width: 220px; }
+
+  .row {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px; margin-bottom: 14px;
+  }
+  .rowhdr {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 8px;
+  }
+  .rowhdr .title { font-weight: 600; font-size: 14px; flex: 1; word-break: break-all; }
+  .rowhdr .src-pill {
+    background: var(--pill); color: #0a3a7a; font-size: 11px;
+    padding: 2px 8px; border-radius: 999px; font-weight: 600;
+  }
+  .rowhdr .rrd-cell .rrd-link {
+    color: var(--accent); font-size: 12px; text-decoration: none;
+  }
+  .rowhdr .rrd-cell .rrd-link:hover { text-decoration: underline; }
+  .rowhdr .rrd-pending {
+    color: var(--muted); font-size: 12px; font-style: italic;
+  }
+
+  .cells {
+    display: grid; grid-template-columns: 1fr 1.4fr; gap: 10px; align-items: start;
+  }
+  .cell {
+    background: #fafbfc; border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px; display: flex; flex-direction: column; gap: 6px;
+  }
+  .cell-label { font-size: 12px; color: var(--muted); }
+  .cell img, .cell video {
+    width: 100%; height: auto; aspect-ratio: 1 / 1;
+    object-fit: cover; background: #000; border-radius: 6px;
+  }
+  .placeholder {
+    width: 100%; aspect-ratio: 1 / 1; background: #eef0f3;
+    border-radius: 6px; display: flex; align-items: center;
+    justify-content: center; color: var(--muted); font-size: 13px;
+  }
+  .row.hidden { display: none; }
+
+  @media (max-width: 720px) {
+    .cells { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>r69l_v2_evermotion_ithappy_840_opp · Jun-10 full test</h1>
+  <div class="meta">Built 2026-06-11 00:23 UTC ·
+    74 samples · iter 0 · 50 steps · seed 42</div>
+</header>
+
+<div class="toolbar">
+  <label>Search</label>
+  <input type="text" id="filter" placeholder="filter by name (e.g. canyon, library, indoor)">
+  <label>Source</label>
+  <select id="sourceFilter">
+    <option value="">All</option>
+    <option value="Project page scene samples">Page scenes (20)</option>
+    <option value="Jun-8 selected">Jun-8 (29)</option>
+    <option value="Jun-9">Jun-9 (13)</option>
+    <option value="Jun-10">Jun-10 (12)</option>
+  </select>
+  <span style="margin-left:auto;color:#57606a;font-size:12px">Hover a video to play. Click .rrd to download for rerun.</span>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_01_modern_living_room_seed42" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_01_modern_living_room__seed42.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_01_modern_living_room_seed42.jpg" alt="page_scene_indoor_01_modern_living_room_seed42">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_02_master_bedroom_seed42" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_02_master_bedroom__seed42.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_02_master_bedroom_seed42.jpg" alt="page_scene_indoor_02_master_bedroom_seed42">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_03_modern_kitchen_seed43" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_03_modern_kitchen__seed43.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_03_modern_kitchen_seed43.jpg" alt="page_scene_indoor_03_modern_kitchen_seed43">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_04_dining_room_seed43" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_04_dining_room__seed43.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_04_dining_room_seed43.jpg" alt="page_scene_indoor_04_dining_room_seed43">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_06_luxury_bathroom_seed44" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_06_luxury_bathroom__seed44.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_06_luxury_bathroom_seed44.jpg" alt="page_scene_indoor_06_luxury_bathroom_seed44">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_15_art_studio_seed49" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_15_art_studio__seed49.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_15_art_studio_seed49.jpg" alt="page_scene_indoor_15_art_studio_seed49">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_22_music_room_seed52" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_22_music_room__seed52.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_22_music_room_seed52.jpg" alt="page_scene_indoor_22_music_room_seed52">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_indoor_25_rustic_cabin_seed54" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_indoor_25_rustic_cabin__seed54.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_indoor_25_rustic_cabin_seed54.jpg" alt="page_scene_indoor_25_rustic_cabin_seed54">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_06_victorian_houses_seed57" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_06_victorian_houses__seed57.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_06_victorian_houses_seed57.jpg" alt="page_scene_outdoor_06_victorian_houses_seed57">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_07_chinese_courtyard_seed57" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_07_chinese_courtyard__seed57.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_07_chinese_courtyard_seed57.jpg" alt="page_scene_outdoor_07_chinese_courtyard_seed57">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_08_parisian_building_seed58" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_08_parisian_building__seed58.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_08_parisian_building_seed58.jpg" alt="page_scene_outdoor_08_parisian_building_seed58">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_09_mediterranean_village_seed58" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_09_mediterranean_village__seed58.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_09_mediterranean_village_seed58.jpg" alt="page_scene_outdoor_09_mediterranean_village_seed58">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_10_gothic_cathedral_seed59" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_10_gothic_cathedral__seed59.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_10_gothic_cathedral_seed59.jpg" alt="page_scene_outdoor_10_gothic_cathedral_seed59">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_11_japanese_street_seed59" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_11_japanese_street__seed59.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_11_japanese_street_seed59.jpg" alt="page_scene_outdoor_11_japanese_street_seed59">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_12_skyscraper_downtown_seed60" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_12_skyscraper_downtown__seed60.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_12_skyscraper_downtown_seed60.jpg" alt="page_scene_outdoor_12_skyscraper_downtown_seed60">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_14_brooklyn_apartment_seed61" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_14_brooklyn_apartment__seed61.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_14_brooklyn_apartment_seed61.jpg" alt="page_scene_outdoor_14_brooklyn_apartment_seed61">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_18_mosque_courtyard_seed63" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_18_mosque_courtyard__seed63.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_18_mosque_courtyard_seed63.jpg" alt="page_scene_outdoor_18_mosque_courtyard_seed63">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_20_urban_park_seed64" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_20_urban_park__seed64.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_20_urban_park_seed64.jpg" alt="page_scene_outdoor_20_urban_park_seed64">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_22_mountain_lodge_seed65" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_22_mountain_lodge__seed65.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_22_mountain_lodge_seed65.jpg" alt="page_scene_outdoor_22_mountain_lodge_seed65">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="page_scene_outdoor_25_amsterdam_canal_seed66" data-source="Project page scene samples">
+  <div class="rowhdr">
+    <span class="src-pill">Project page scene samples</span>
+    <span class="title">scene_outdoor_25_amsterdam_canal__seed66.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/page_scene_outdoor_25_amsterdam_canal_seed66.jpg" alt="page_scene_outdoor_25_amsterdam_canal_seed66">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_01_alpine_mountains_golden_hour" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_01_alpine_mountains_golden_hour.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_01_alpine_mountains_golden_hour.jpg" alt="jun8_scene_01_alpine_mountains_golden_hour">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_06_volcanic_lava_terrain" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_06_volcanic_lava_terrain.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_06_volcanic_lava_terrain.jpg" alt="jun8_scene_06_volcanic_lava_terrain">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_08_red_sandstone_canyon" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_08_red_sandstone_canyon.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_08_red_sandstone_canyon.jpg" alt="jun8_scene_08_red_sandstone_canyon">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_15_sandstone_arch_desert" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_15_sandstone_arch_desert.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_15_sandstone_arch_desert.jpg" alt="jun8_scene_15_sandstone_arch_desert">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_23_lighthouse_cliff" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_23_lighthouse_cliff.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_23_lighthouse_cliff.jpg" alt="jun8_scene_23_lighthouse_cliff">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_41_scandinavian_living_room" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_41_scandinavian_living_room.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_41_scandinavian_living_room.jpg" alt="jun8_scene_41_scandinavian_living_room">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_42_industrial_kitchen" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_42_industrial_kitchen.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_42_industrial_kitchen.jpg" alt="jun8_scene_42_industrial_kitchen">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_43_classic_library" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_43_classic_library.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_43_classic_library.jpg" alt="jun8_scene_43_classic_library">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_45_subway_station" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_45_subway_station.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_45_subway_station.jpg" alt="jun8_scene_45_subway_station">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_46_wine_cellar" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_46_wine_cellar.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_46_wine_cellar.jpg" alt="jun8_scene_46_wine_cellar">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_47_japanese_tatami_room" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_47_japanese_tatami_room.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_47_japanese_tatami_room.jpg" alt="jun8_scene_47_japanese_tatami_room">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_48_cathedral_interior" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_48_cathedral_interior.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_48_cathedral_interior.jpg" alt="jun8_scene_48_cathedral_interior">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_49_cozy_attic_bedroom" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_49_cozy_attic_bedroom.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_49_cozy_attic_bedroom.jpg" alt="jun8_scene_49_cozy_attic_bedroom">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_50_indoor_swimming_pool" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_50_indoor_swimming_pool.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_50_indoor_swimming_pool.jpg" alt="jun8_scene_50_indoor_swimming_pool">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_52_modern_townhouse_row" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_52_modern_townhouse_row.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_52_modern_townhouse_row.jpg" alt="jun8_scene_52_modern_townhouse_row">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_53_downtown_skyscraper_cluster" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_53_downtown_skyscraper_cluster.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_53_downtown_skyscraper_cluster.jpg" alt="jun8_scene_53_downtown_skyscraper_cluster">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_54_highway_overpass_interchange" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_54_highway_overpass_interchange.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_54_highway_overpass_interchange.jpg" alt="jun8_scene_54_highway_overpass_interchange">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_56_classical_museum_exterior" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_56_classical_museum_exterior.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_56_classical_museum_exterior.jpg" alt="jun8_scene_56_classical_museum_exterior">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_57_european_plaza_fountain" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_57_european_plaza_fountain.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_57_european_plaza_fountain.jpg" alt="jun8_scene_57_european_plaza_fountain">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_59_medieval_town_square" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_59_medieval_town_square.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_59_medieval_town_square.jpg" alt="jun8_scene_59_medieval_town_square">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_62_hotel_lobby_modern" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_62_hotel_lobby_modern.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_62_hotel_lobby_modern.jpg" alt="jun8_scene_62_hotel_lobby_modern">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_67_university_lecture_hall" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_67_university_lecture_hall.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_67_university_lecture_hall.jpg" alt="jun8_scene_67_university_lecture_hall">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_68_modern_gym_interior" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_68_modern_gym_interior.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_68_modern_gym_interior.jpg" alt="jun8_scene_68_modern_gym_interior">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_71_elementary_classroom" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_71_elementary_classroom.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_71_elementary_classroom.jpg" alt="jun8_scene_71_elementary_classroom">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_73_modern_art_museum_atrium" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_73_modern_art_museum_atrium.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_73_modern_art_museum_atrium.jpg" alt="jun8_scene_73_modern_art_museum_atrium">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_74_cvpr_conference_auditorium" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_74_cvpr_conference_auditorium.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_74_cvpr_conference_auditorium.jpg" alt="jun8_scene_74_cvpr_conference_auditorium">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_75_convention_expo_floor" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_75_convention_expo_floor.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_75_convention_expo_floor.jpg" alt="jun8_scene_75_convention_expo_floor">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_76_grand_concert_hall" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_76_grand_concert_hall.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_76_grand_concert_hall.jpg" alt="jun8_scene_76_grand_concert_hall">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun8_scene_79_shopping_mall_atrium" data-source="Jun-8 selected">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-8 selected</span>
+    <span class="title">scene_79_shopping_mall_atrium.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun8_scene_79_shopping_mall_atrium.jpg" alt="jun8_scene_79_shopping_mall_atrium">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_believe_0_6" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">believe_0 (6).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_believe_0_6.jpg" alt="jun9_believe_0_6">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_believe_0_7" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">believe_0 (7).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_believe_0_7.jpg" alt="jun9_believe_0_7">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_believe_1_1" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">believe_1 (1).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_believe_1_1.jpg" alt="jun9_believe_1_1">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_believe_1_2" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">believe_1 (2).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_believe_1_2.jpg" alt="jun9_believe_1_2">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_10" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (10).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_10.jpg" alt="jun9_image_10">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_3" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (3).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_3.jpg" alt="jun9_image_3">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_4" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (4).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_4.jpg" alt="jun9_image_4">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_5" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (5).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_5.jpg" alt="jun9_image_5">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_6" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (6).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_6.jpg" alt="jun9_image_6">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_7" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (7).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_7.jpg" alt="jun9_image_7">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_8" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (8).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_8.jpg" alt="jun9_image_8">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_image_9" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">image (9).png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_image_9.jpg" alt="jun9_image_9">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun9_village_no_sky_rgba" data-source="Jun-9">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-9</span>
+    <span class="title">village_no_sky_rgba.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun9_village_no_sky_rgba.jpg" alt="jun9_village_no_sky_rgba">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_indoor_01_modern_living_room" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">indoor_01_modern_living_room.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_indoor_01_modern_living_room.jpg" alt="jun10_indoor_01_modern_living_room">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_indoor_02_classical_library" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">indoor_02_classical_library.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_indoor_02_classical_library.jpg" alt="jun10_indoor_02_classical_library">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_indoor_03_cyberpunk_apartment" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">indoor_03_cyberpunk_apartment.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_indoor_03_cyberpunk_apartment.jpg" alt="jun10_indoor_03_cyberpunk_apartment">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_indoor_04_japanese_tatami" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">indoor_04_japanese_tatami.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_indoor_04_japanese_tatami.jpg" alt="jun10_indoor_04_japanese_tatami">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_indoor_05_industrial_loft" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">indoor_05_industrial_loft.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_indoor_05_industrial_loft.jpg" alt="jun10_indoor_05_industrial_loft">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_outdoor_01_alpine_lake_sunrise" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">outdoor_01_alpine_lake_sunrise.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_outdoor_01_alpine_lake_sunrise.jpg" alt="jun10_outdoor_01_alpine_lake_sunrise">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_outdoor_02_tropical_beach" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">outdoor_02_tropical_beach.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_outdoor_02_tropical_beach.jpg" alt="jun10_outdoor_02_tropical_beach">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_outdoor_03_snowy_alpine_village" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">outdoor_03_snowy_alpine_village.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_outdoor_03_snowy_alpine_village.jpg" alt="jun10_outdoor_03_snowy_alpine_village">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_outdoor_04_red_canyon" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">outdoor_04_red_canyon.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_outdoor_04_red_canyon.jpg" alt="jun10_outdoor_04_red_canyon">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_outdoor_05_misty_autumn_forest" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">outdoor_05_misty_autumn_forest.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_outdoor_05_misty_autumn_forest.jpg" alt="jun10_outdoor_05_misty_autumn_forest">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_outdoor_06_neon_tokyo_street" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">outdoor_06_neon_tokyo_street.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_outdoor_06_neon_tokyo_street.jpg" alt="jun10_outdoor_06_neon_tokyo_street">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row" data-stem="jun10_outdoor_07_rice_terraces" data-source="Jun-10">
+  <div class="rowhdr">
+    <span class="src-pill">Jun-10</span>
+    <span class="title">outdoor_07_rice_terraces.png</span>
+    <span class="rrd-cell"><span class="rrd-pending">.rrd pending</span></span>
+  </div>
+  <div class="cells">
+    <div class="cell input-cell">
+      <div class="cell-label">input</div>
+      <img loading="lazy" src="thumbs/jun10_outdoor_07_rice_terraces.jpg" alt="jun10_outdoor_07_rice_terraces">
+    </div>
+    <div class="cell model-cell">
+      <div class="cell-label">r69l_v2_evermotion_ithappy_840_opp · 50 steps</div>
+      <div class="placeholder">video pending</div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+function applyFilter() {
+  const q = (document.getElementById("filter").value || "").toLowerCase();
+  const src = document.getElementById("sourceFilter").value;
+  document.querySelectorAll(".row").forEach(row => {
+    const stem = (row.dataset.stem || "").toLowerCase();
+    const source = row.dataset.source || "";
+    const matchesQ = !q || stem.includes(q);
+    const matchesSrc = !src || source === src;
+    row.classList.toggle("hidden", !(matchesQ && matchesSrc));
+  });
+}
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("filter").addEventListener("input", applyFilter);
+  document.getElementById("sourceFilter").addEventListener("change", applyFilter);
+});
+</script>
+</body>
+</html>
